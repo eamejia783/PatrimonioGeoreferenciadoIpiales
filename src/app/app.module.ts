@@ -25,7 +25,7 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
     FormsModule,
     HttpModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCRCDWb9cgz9whyxwnQ8TjoL8LxrRMC7QI'
+      apiKey: ''
     })
   ],
   providers: [],
