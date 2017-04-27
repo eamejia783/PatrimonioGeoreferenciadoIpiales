@@ -7,18 +7,26 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ParallaxComponent } from './parallax/parallax.component';
+import { MapComponent } from './map/map.component';
+
+//import google maps
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    ParallaxComponent
+    ParallaxComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCRCDWb9cgz9whyxwnQ8TjoL8LxrRMC7QI'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

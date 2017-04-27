@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MapComponent } from '../map/map.component';
 declare var $: any;
 @Component({
   selector: 'app-parallax',
@@ -8,9 +9,9 @@ declare var $: any;
 export class ParallaxComponent implements OnInit {
 
   ngOnInit() {
-  $(document).ready(function () {
-    $('.parallax').parallax();
-  });
-}
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
+  }
 
 }
