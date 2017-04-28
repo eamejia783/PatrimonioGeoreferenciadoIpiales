@@ -8,9 +8,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ParallaxComponent } from './parallax/parallax.component';
 import { MapComponent } from './map/map.component';
-
+import { SliderComponent } from './slider/slider.component';
 //import google maps
 import { AgmCoreModule } from 'angular2-google-maps/core';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
     NavbarComponent,
     FooterComponent,
     ParallaxComponent,
-    MapComponent
+    MapComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
